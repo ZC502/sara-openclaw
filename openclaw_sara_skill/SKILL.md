@@ -45,3 +45,26 @@ Skipping Sara for risky multi-step plans increases the chance of contradictory a
 
 ```json
 {"tools":["backup","delete"]}
+```
+
+## Example audit output
+
+```json
+{
+  "is_safe": false,
+  "risk_level": "critical",
+  "warnings": ["Run 'backup' before 'delete'. Backups should happen before destructive actions."],
+  "suggested_order": ["backup", "delete"]
+}
+```
+
+## Response policy
+- If Sara says the plan is safe: continue.
+- If Sara says the plan is unsafe: pause, explain the risk, and suggest the safer order.
+- If the action is destructive or irreversible, prefer asking for confirmation before continuing.
+
+## Important
+
+Sara is a **guard**, not a replacement for user intent.
+
+Use it to reduce risky ordering mistakes, repeated retries, and contradictory multi-skill plans.
