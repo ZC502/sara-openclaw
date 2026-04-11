@@ -3,7 +3,7 @@
 
 **Note**: Sara runs its audit locally and does not require an extra model call for safety checks. In practice, it can reduce wasted retries and contradictory multi-skill plans.
 
-![Sara (2).png](https://github.com/ZC502/sara-openclaw/blob/3b79383c1d3ad3a351fd54c2ce234751075e4647/Sara%20(2).png)
+![Sara (2).png](https://raw.githubusercontent.com/ZC502/sara-openclaw/3b79383c1d3ad3a351fd54c2ce234751075e4647/Sara%20(2).png)
 
 Sara helps your skills work in a safer order.
 
