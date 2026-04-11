@@ -1,6 +1,8 @@
 # Sara
 **The quiet logic guard for OpenClaw multi-skill workflows.**
 
+**Note**: Sara runs its audit locally and does not require an extra model call for safety checks. In practice, it can reduce wasted retries and contradictory multi-skill plans.
+
 Sara helps your skills work in a safer order.
 
 When you install many skills, the problem is often not that one skill is broken — it is that multiple skills start conflicting with each other, running in the wrong order, or causing messy retries and risky actions.
